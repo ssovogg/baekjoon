@@ -1,0 +1,30 @@
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>없는 숫자 더하기</title>
+</head>
+
+<body>
+  <h1 id="answer"></h1>
+</body>
+<script>
+  let numbers = [1, 2, 3, 4, 6, 7, 8, 0];
+  
+  const answer = document.getElementById("answer");
+  answer.innerHTML = solution(numbers);
+  
+  function solution(numbers) {
+    let result = 0
+    for (let i = 0; i < numbers.length; i++) {
+      result += numbers[i];
+    }
+    return 45 - result;
+  }
+
+  solution(numbers);
+</script>
+
+</html>
